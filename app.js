@@ -80,3 +80,17 @@ form.addEventListener("submit", (e) => {
 });
 
 render();
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    loadTodos,
+    saveTodos,
+    addTodo,
+    toggleTodo,
+    deleteTodo,
+    createTodoElement,
+    updateEmptyState,
+    render,
+    STORAGE_KEY,
+  };
+}
